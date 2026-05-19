@@ -1,0 +1,249 @@
+.register-page {
+    padding: 40px 24px 60px;
+    min-height: calc(100vh - 72px);
+    background: #f5f5f5;
+}
+
+.register-page__inner {
+    margin: 0 auto;
+    padding: 30px 40px;
+    max-width: 550px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.register-page__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-form {
+    padding: 0;
+}
+
+.register-form__group {
+    margin-bottom: 25px;
+}
+
+.register-form__label-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+.register-form__label-row span:first-child {
+    margin: 0;
+}
+
+.register-form__badge {
+    display: inline-block;
+    padding: 2px 6px;
+    background: #ff4444;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.register-form__season-label {
+    margin-left: auto;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.register-form__input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    background: #fafafa;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.register-form__input:has(+ .register-form__error-message),
+.register-form__textarea:has(+ .register-form__error-message) {
+    border-color: #d32f2f;
+    background: #fff5f5;
+}
+
+.register-form__input::placeholder {
+    color: #bbb;
+}
+
+.register-form__error-message {
+    display: block;
+    margin: 6px 0 0;
+    font-size: 12px;
+    color: #d32f2f;
+}
+
+.register-form__file-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-form__file-input {
+    display: none;
+}
+
+.register-form__file-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ccc;
+    color: #555;
+    font-size: 13px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.register-form__file-button:hover {
+    background: #bbb;
+}
+
+.register-form__season-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.register-form__season-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.register-form__season-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.register-form__textarea {
+    padding: 12px;
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    resize: vertical;
+    background: #fafafa;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.register-form__textarea::placeholder {
+    color: #bbb;
+}
+
+.register-form__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.register-form__button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.register-form__button--back {
+    background: #d8d8d8;
+    color: #666;
+}
+
+.register-form__button--back:hover {
+    background: #c8c8c8;
+}
+
+.register-form__button--save {
+    background: #ffcc00;
+    color: #333;
+}
+
+.register-form__button--save:hover {
+    background: #ffb800;
+}
+
+/* 画像プレビュー */
+.register-form__image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding: 16px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.register-form__image-preview.is-hidden {
+    display: none;
+}
+
+.register-form__image-preview-img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.register-form__image-filename {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    word-break: break-all;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .register-page__inner {
+        padding: 20px 20px;
+    }
+
+    .register-page__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .register-form__actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .register-form__button {
+        width: 100%;
+    }
+}

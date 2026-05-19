@@ -1,0 +1,308 @@
+.detail-page {
+    padding: 40px 24px 60px;
+    min-height: calc(100vh - 72px);
+    background: #f5f5f5;
+}
+
+.detail-page__inner {
+    margin: 0 auto;
+    padding: 30px 40px;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.detail-page__title {
+    margin: 0 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 2カラムレイアウト */
+.detail-form__container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.detail-form__image-section {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detail-form__content-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 画像プレビュー */
+.detail-form__image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.detail-form__image-preview.is-hidden {
+    display: none;
+}
+
+.detail-form__image-preview-img {
+    max-width: 100%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.detail-form__image-filename {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    word-break: break-all;
+    max-width: 100%;
+}
+
+/* ファイル選択 */
+.detail-form__file-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-form__file-input {
+    display: none;
+}
+
+.detail-form__file-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ccc;
+    color: #555;
+    font-size: 13px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    flex: 1;
+    text-align: center;
+}
+
+.detail-form__file-button:hover {
+    background: #bbb;
+}
+
+/* フォーム */
+.detail-form {
+    padding: 0;
+}
+
+.detail-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-form__label-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+.detail-form__label-row span:first-child {
+    margin: 0;
+}
+
+.detail-form__badge {
+    display: inline-block;
+    padding: 2px 6px;
+    background: #ff4444;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.detail-form__input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    background: #fafafa;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.detail-form__input:has(+ .detail-form__error-message) {
+    border-color: #d32f2f;
+    background: #fff5f5;
+}
+
+.detail-form__input:focus {
+    outline: none;
+    border-color: #999;
+    background: #fff;
+}
+
+.detail-form__error-message {
+    display: block;
+    font-size: 12px;
+    color: #d32f2f;
+    margin-top: 4px;
+}
+
+/* 季節選択 */
+.detail-form__season-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.detail-form__season-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+.detail-form__season-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* テキストエリア */
+.detail-form__textarea {
+    padding: 12px;
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    resize: vertical;
+    background: #fafafa;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.detail-form__textarea:focus {
+    outline: none;
+    border-color: #999;
+    background: #fff;
+}
+
+.detail-form__textarea:has(+ .detail-form__error-message) {
+    border-color: #d32f2f;
+    background: #fff5f5;
+}
+
+/* ボタン */
+.detail-form__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+}
+
+.detail-form__button {
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-width: 140px;
+    padding: 0 20px;
+}
+
+.detail-form__button--back {
+    background: #d8d8d8;
+    color: #666;
+}
+
+.detail-form__button--back:hover {
+    background: #c8c8c8;
+}
+
+.detail-form__button--save {
+    background: #ffcc00;
+    color: #333;
+}
+
+.detail-form__button--save:hover {
+    background: #ffb800;
+}
+
+.detail-form__button--delete {
+    background: #e8e8e8;
+    color: #d32f2f;
+    margin-left: auto;
+}
+
+.detail-form__button--delete:hover {
+    background: #d8d8d8;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .detail-page__inner {
+        padding: 20px 20px;
+    }
+
+    .detail-page__title {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .detail-form__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail-form__image-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .detail-form__actions {
+        flex-direction: column;
+        gap: 10px;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .detail-form__button {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .detail-form__button--delete {
+        margin-left: 0;
+    }
+}

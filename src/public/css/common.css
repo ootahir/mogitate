@@ -1,0 +1,40 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 16px 24px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    text-decoration: none;
+}
+
+.header__logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.header__logo-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header__logo-text {
+    color: #e8a000;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
