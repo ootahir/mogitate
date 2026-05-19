@@ -2,17 +2,22 @@
 
 ## Dockerビルド
 
-- git clone git@github.com:yukit4mu/test_contact-form.git
-- docker-compose up -d --build
+```bash
+$ git clone git@github.com:yukit4mu/mogitate.git
+$ cd mogitate
+$ docker-compose up -d --build
+```
 
 ## Laravel環境構築
 
-- docker-compose exec php bash
-- composer install
-- cp .env.example .env
-- php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
+```bash
+$ docker-compose exec php bash
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+$ php artisan migrate
+$ php artisan db:seed
+```
 
 ## 開発環境
 
